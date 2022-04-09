@@ -140,6 +140,7 @@ button{
     justify-content: center;
 }
 .close-btn img{
+    width:90%;
     padding: 5px;
 }
 .name{
