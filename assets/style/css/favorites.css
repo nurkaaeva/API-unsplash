@@ -33,7 +33,7 @@ button{
     width: 186px;
     justify-content: space-between;
 }
-.logo_name a{
+.logo_name a.media{
     font-family: 'SF UI Display';
     font-size: 24px;
     line-height: 29px;
@@ -113,7 +113,7 @@ button{
     transform: translate(-50%, -50%);
     width: 100%;
     height: 100vh;
-    background: #f9f9f9;
+    background: black;
     box-shadow: 0px 5px 50px rgba(0, 0, 0, 0.25);
     border-radius: 0px;
     transition: .5s;
@@ -135,8 +135,11 @@ button{
     border-radius: 50%;
     border: none;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.close-btn img{  
+.close-btn img{
     padding: 5px;
 }
 .name{
@@ -161,7 +164,7 @@ button{
     line-height: 36px;
     letter-spacing: 0em;
     text-align: left;
-    color: black;
+    color: white;
 }
 .name a{
     font-family: SF UI Display;
@@ -169,7 +172,7 @@ button{
     line-height: 21px;
     letter-spacing: 0em;
     text-align: left;
-    color: black;
+    color: white;
     margin-left: 0;
 }
 .favorite-btn{
@@ -209,7 +212,7 @@ path:focus{
     line-height: 24px;
 }
 .large-img{
-    height: 80%;
+    height: auto;
     width: auto;
     max-width: 80%;
     object-fit: cover;
@@ -248,3 +251,82 @@ input:focus::-webkit-input-placeholder { color:transparent; }
 input:focus:-moz-placeholder { color:transparent; } /* FF 4-18 */
 input:focus::-moz-placeholder { color:transparent; } /* FF 19+ */
 input:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
+
+@media(max-width: 1000px){
+    a.media {
+        display: none;
+    }
+    .favorite h1{
+        font-size: 62px;
+    }
+    .nav_favorites_history{
+        width: 165px;
+    }
+    .nav_search_list{
+        width: 60%;
+    }
+}
+@media(max-width: 800px){
+    .gallery{
+        columns: 2;
+    }
+    .favorite{
+        padding: 50px;
+    }
+}
+@media(max-width: 700px){
+    .download-btn{
+        display: block;
+        width: auto;
+        padding: 4px 7px;
+    }
+    .download-btn p{
+        display: none;
+    }
+    .favorite-btn{
+        right: 70px;
+    }
+    .name{
+        width: 235px;
+    }
+    .name p{
+        font-size: 25px;
+    }
+}
+@media(max-width: 600px){
+    .favorite h1{
+        font-size: 50px;
+    }
+}
+@media(max-width: 500px){
+    .favorite h1{
+        font-size: 40px;
+    }
+    .gallery{
+        columns: 1;
+    }
+    .select{
+        padding-bottom: 0;
+    }
+    .name p{
+        font-size: 20px;
+    }
+    .name a{
+        font-size: 16px;
+    }
+    .name{
+        width: 200px;
+    }
+    
+}
+@media(max-width: 400px){
+    .favorite h1{
+        font-size: 35px;
+    }
+    .name p{
+        font-size: 16px;
+    }
+    .name a{
+        font-size: 14px;
+    }
+}

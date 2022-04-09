@@ -33,7 +33,7 @@ button{
     width: 186px;
     justify-content: space-between;
 }
-.logo_name a{
+.logo_name a.media{
     font-family: 'SF UI Display';
     font-size: 24px;
     line-height: 29px;
@@ -122,3 +122,37 @@ input:focus::-webkit-input-placeholder { color:transparent; }
 input:focus:-moz-placeholder { color:transparent; } /* FF 4-18 */
 input:focus::-moz-placeholder { color:transparent; } /* FF 19+ */
 input:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
+
+
+@media(max-width: 1000px){
+    a.media {
+        display: none;
+    }
+    .search_history h1{
+        font-size: 62px;
+    }
+    .nav_favorites_history{
+        width: 165px;
+    }
+    .nav_search_list{
+        width: 60%;
+    }
+}
+@media(max-width: 600px){
+    .search_history h1{
+        font-size: 50px;
+    }
+}
+@media(max-width: 500px){
+    .search_history h1{
+        font-size: 40px;
+    }
+    .nav_search_list .history_list .cont a{
+        font-size: 16px;
+    }
+}
+@media(max-width: 400px){
+    .search_history h1{
+        font-size: 35px;
+    }
+}

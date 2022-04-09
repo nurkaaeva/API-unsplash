@@ -34,7 +34,7 @@ button{
     width: 186px;
     justify-content: space-between;
 }
-.logo_name a.logo{
+.logo_name a.media{
     font-family: 'SF UI Display';
     font-size: 24px;
     line-height: 29px;
@@ -255,7 +255,7 @@ path:focus{
     }
 }
 @media(max-width: 1200px){
-    .logo_name a{
+    .logo_name a.media{
         display: none;
     }
     .gallery{
@@ -272,7 +272,7 @@ path:focus{
     .header-section{
         height: 300px;
     }
-    .logo_name a{
+    .logo_name a.media{
         display: none;
     }
     .search-box{
@@ -286,6 +286,20 @@ path:focus{
     }
 }
 @media(max-width: 700px){
+    .download-btn{
+        display: block;
+        width: auto;
+        padding: 4px 7px;
+    }
+    .download-btn p{
+        display: none;
+    }
+    .favorite-btn{
+        right: 70px;
+    }
+    .name p{
+        font-size: 25px;
+    }
 }
 @media(max-width: 500px){
     .gallery{
@@ -300,8 +314,23 @@ path:focus{
     }
     .nav_favorites_history{
         width: 70px;
-    }   
+    }
+    .name p{
+        font-size: 20px;
+    }
+    .name a{
+        font-size: 16px;
+    }
 }
+@media(max-width: 400px){
+    .name p{
+        font-size: 16px;
+    }
+    .name a{
+        font-size: 14px;
+    }
+}
+
 
 ::-webkit-input-placeholder {color:#ffff;}
 ::-moz-placeholder          {color:#ffff;}/* Firefox 19+ */
