@@ -34,7 +34,7 @@ button{
     width: 186px;
     justify-content: space-between;
 }
-.logo_name a{
+.logo_name a.logo{
     font-family: 'SF UI Display';
     font-size: 24px;
     line-height: 29px;
